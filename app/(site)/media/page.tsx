@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Arrow, Download } from "@/components/Icons";
 import { NextStop, PageHead, Station } from "@/components/Station";
+import { asset } from "@/lib/asset";
 import { COLLATERAL, MEDIA } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -18,7 +19,7 @@ export default function Media() {
       <Station>
         <div className="film">
           <figure className="film__wide">
-            <video controls preload="none" poster="/img/film-poster.png" playsInline>
+            <video controls preload="none" poster={asset("/img/film-poster.png")} playsInline>
               <source src={MEDIA.advert16x9} type="video/mp4" />
             </video>
             <figcaption>

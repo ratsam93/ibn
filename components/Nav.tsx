@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { asset } from "@/lib/asset";
 import { EVENT } from "@/lib/content";
 
 const LINKS = [
@@ -26,7 +27,7 @@ export default function Nav() {
     <header className="nav" data-open={open}>
       <div className="nav__bar">
         <Link className="nav__brand" href="/" aria-label="Indian Business Network, home">
-          <Image src="/img/lotus.png" alt="" width={430} height={272} className="nav__mark" priority />
+          <Image src={asset("/img/lotus.png")} alt="" width={430} height={272} className="nav__mark" priority />
           <span className="nav__word">
             Indian Business Network
             <small>London 2026</small>

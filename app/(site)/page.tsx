@@ -3,6 +3,7 @@ import Link from "next/link";
 import Countdown from "@/components/Countdown";
 import { Arrow, Mail } from "@/components/Icons";
 import { Station } from "@/components/Station";
+import { asset } from "@/lib/asset";
 import { AWARDS, DAYS, EVENT, PILLARS } from "@/lib/content";
 
 export default function Home() {
@@ -57,7 +58,7 @@ export default function Home() {
           </div>
         </div>
         <div className="hero__tower" aria-hidden>
-          <Image src="/img/bigben.jpg" alt="" width={667} height={1700} priority sizes="(max-width: 900px) 70vw, 34vw" />
+          <Image src={asset("/img/bigben.jpg")} alt="" width={667} height={1700} priority sizes="(max-width: 900px) 70vw, 34vw" />
         </div>
       </section>
 

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { Arrow, Phone } from "@/components/Icons";
 import { NextStop, PageHead, Station, tel } from "@/components/Station";
+import { asset } from "@/lib/asset";
 import { ABOUT_IBN, LEADERS, MAIN_SITE, MEMBERSHIP, PAST_EVENT } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -20,7 +21,7 @@ export default function About() {
         <ul className="leaders">
           {LEADERS.map((l) => (
             <li key={l.name}>
-              <Image src={l.img} alt={`Portrait of ${l.name}`} width={216} height={216} className="leaders__img" />
+              <Image src={asset(l.img)} alt={`Portrait of ${l.name}`} width={216} height={216} className="leaders__img" />
               <div>
                 <h2>{l.name}</h2>
                 <p className="leaders__role">{l.role}</p>
