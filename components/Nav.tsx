@@ -8,11 +8,12 @@ import { asset } from "@/lib/asset";
 import { EVENT } from "@/lib/content";
 
 const LINKS = [
+  { href: "/ceremony", label: "The Event" },
+  { href: "/event-details", label: "Details" },
   { href: "/programme", label: "Programme" },
   { href: "/awards", label: "Awards" },
   { href: "/delegates", label: "Delegates" },
   { href: "/partners", label: "Partners" },
-  { href: "/media", label: "Media" },
   { href: "/about", label: "About" },
 ];
 

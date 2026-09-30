@@ -16,6 +16,8 @@ export default function Footer() {
         </div>
         <nav aria-label="Footer">
           <p className="footer__h">Explore</p>
+          <Link href="/ceremony">The Awards Ceremony</Link>
+          <Link href="/event-details">Event details</Link>
           <Link href="/programme">5-day programme</Link>
           <Link href="/awards">Award categories</Link>
           <Link href="/delegates">Delegates &amp; FAQ</Link>
